@@ -1,0 +1,61 @@
+,title,genre,release_date,store_name,store_id,og_price,dc_price,discount_perc,scores
+0,Rugrats: Adventures in Gameland,"['Indie', 'Platformer', 'Adventure', 'Action']",2024-09-10,Epic Games Store,25,24.99,0.00,100.0,0.0
+1,Super Crazy Rhythm Castle,"['Indie', 'Adventure', 'Action']",2023-11-13,Epic Games Store,25,39.99,0.00,100.0,0.0
+2,V-Rally 4 Ultimate Edition,['Racing'],2018-09-11,GreenManGaming,3,65.92,5.27,92.01,3.0
+3,Cycling Bundle,"['Strategy', 'Simulation', 'Sports']",2015-06-18,IndieGala,30,69.99,6.99,90.01,0.0
+4,One Punch Man: A Hero Nobody Knows Deluxe Edition,"['Action', 'Fighting']",2020-02-27,IndieGala,30,79.99,7.99,90.01,2.2
+5,One Punch Man: A Hero Nobody Knows Deluxe Edition,"['Action', 'Fighting']",2020-02-27,GamersGate,2,79.99,8.00,90.0,2.2
+6,One Punch Man: A Hero Nobody Knows Deluxe Edition,"['Action', 'Fighting']",2020-02-27,Gamesplanet,27,79.99,7.08,91.15,2.2
+7,ONE PIECE World Seeker Deluxe Edition,"['Adventure', 'Action']",2019-03-14,IndieGala,30,89.99,8.99,90.01,2.79
+8,ONE PIECE World Seeker Deluxe Edition,"['Adventure', 'Action']",2019-03-14,GamersGate,2,89.99,9.00,90.0,2.79
+9,ONE PIECE World Seeker Deluxe Edition,"['Adventure', 'Action']",2019-03-14,Gamesplanet,27,89.99,8.10,91.0,2.79
+10,Assassins Creed Origins Deluxe Edition,"['Action', 'RPG']",2017-10-27,GreenManGaming,3,69.99,9.24,86.8,3.97
+11,ONE PIECE BURNING BLOOD GOLD EDITION,"['Arcade', 'Action', 'Fighting']",2016-04-21,IndieGala,30,74.98,9.74,87.01,3.11
+12,ONE PIECE BURNING BLOOD GOLD EDITION,"['Arcade', 'Action', 'Fighting']",2016-04-21,Gamesplanet,27,74.98,8.75,88.33,3.11
+13,ONE PIECE BURNING BLOOD GOLD EDITION,"['Arcade', 'Action', 'Fighting']",2016-04-21,GamersGate,2,74.99,9.75,87.0,3.11
+14,Assassin's Creed Odyssey - Deluxe Edition,"['Action', 'RPG']",2018-10-05,GreenManGaming,3,79.99,10.56,86.8,3.98
+15,CODE VEIN Deluxe Edition,"['Action', 'RPG']",2019-09-26,Gamesplanet,27,79.99,10.27,87.16,3.54
+16,Assassins Creed Odyssey Gold Edition,"['Action', 'RPG']",2018-10-05,GreenManGaming,3,99.99,13.20,86.8,3.98
+17,Assassins Creed Origins Gold Edition,"['Action', 'RPG']",2017-10-27,GreenManGaming,3,99.99,13.20,86.8,3.97
+18,SCARLET NEXUS Deluxe Edition,"['Adventure', 'Action', 'RPG']",2021-06-25,Gamesplanet,27,79.99,10.77,86.54,3.64
+19,TEKKEN 7 - Originals Edition,"['Action', 'Fighting', 'Sports']",2015-03-18,Gamesplanet,27,89.99,11.75,86.94,4.02
+20,CODE VEIN Deluxe Edition,"['Action', 'RPG']",2019-09-26,IndieGala,30,79.99,11.99,85.01,3.54
+21,Ni no Kuni II: Revenant Kingdom - The Prince's Edition,"['Adventure', 'RPG']",2018-03-23,IndieGala,30,79.98,11.99,85.01,3.89
+22,CODE VEIN Deluxe Edition,"['Action', 'RPG']",2019-09-26,GamersGate,2,79.99,12.00,85.0,3.54
+23,Ni no Kuni II: Revenant Kingdom - The Prince's Edition,"['Adventure', 'RPG']",2018-03-23,GamersGate,2,79.98,12.00,85.0,3.89
+24,Watch_Dogs 2 Gold Edition,"['Action', 'RPG']",2010-01-13,Gamesplanet,27,79.99,11.00,86.25,4.41
+25,Ni no Kuni II: Revenant Kingdom - The Prince's Edition,"['Adventure', 'RPG']",2018-03-23,Gamesplanet,27,79.98,11.00,86.25,3.89
+26,Assassins Creed Odyssey Ultimate Edition,"['Action', 'RPG']",2018-10-05,GreenManGaming,3,119.99,15.84,86.8,3.98
+27,SCARLET NEXUS Ultimate Edition,"['Adventure', 'Action', 'RPG']",2021-06-25,Gamesplanet,27,99.99,12.99,87.01,3.64
+28,Dragon Ball Fighter Z  FighterZ Edition,['Fighting'],2021-09-09,Gamesplanet,27,89.99,12.49,86.12,0.0
+29,SOULCALIBUR VI Deluxe Edition,"['Action', 'Fighting']",2018-10-19,Gamesplanet,27,89.99,12.49,86.12,3.71
+30,Far Cry 5 and Far Cry New Dawn Deluxe Edition Bundle,"['Arcade', 'Shooter', 'Adventure', 'Action']",2019-02-15,Gamesplanet,27,99.99,13.75,86.25,3.36
+31,Dragon Ball Fighter Z  FighterZ Edition,['Fighting'],2021-09-09,IndieGala,30,89.99,14.39,84.01,0.0
+32,SOULCALIBUR VI Deluxe Edition,"['Action', 'Fighting']",2018-10-19,IndieGala,30,89.99,14.39,84.01,3.71
+33,Dragon Ball Fighter Z  FighterZ Edition,['Fighting'],2021-09-09,GamersGate,2,89.99,14.40,84.0,0.0
+34,SOULCALIBUR VI Deluxe Edition,"['Action', 'Fighting']",2018-10-19,GamersGate,2,89.99,14.40,84.0,3.71
+35,Captain Tsubasa: Rise of New Champions - Ultimate Edition,"['Casual', 'Action', 'RPG', 'Sports']",2020-08-27,Gamesplanet,27,79.99,12.49,84.39,3.25
+36,Assassins Creed Valhalla Deluxe Edition,"['Adventure', 'Action', 'RPG']",2020-11-10,GreenManGaming,3,79.99,14.08,82.4,3.72
+37,Far Cry 5 Gold Edition and Far Cry New Dawn Deluxe Edition Bundle,"['Arcade', 'Shooter', 'Adventure', 'Action']",2019-02-15,Gamesplanet,27,129.99,17.86,86.26,3.36
+38,SCARLET NEXUS Deluxe,"['Adventure', 'Action', 'RPG']",2021-06-25,IndieGala,30,79.99,14.39,82.01,3.64
+39,SCARLET NEXUS Deluxe Edition,"['Adventure', 'Action', 'RPG']",2021-06-25,GamersGate,2,79.99,14.40,82.0,3.64
+40,Ace Combat 7: Skies Unknown - TOP GUN: Maverick Edition,"['Arcade', 'Adventure', 'Action', 'Simulation']",2019-01-18,Gamesplanet,27,74.99,12.99,82.68,3.94
+41,TEKKEN 7 - Definitive Edition,"['Platformer', 'Adventure', 'Action']",2017-08-29,Gamesplanet,27,109.99,16.99,84.55,3.29
+42,Watch_Dogs 2 Gold Edition,"['Action', 'RPG']",2010-01-13,Humble Store,11,79.99,11.99,85.01,4.41
+43,Disco Elysium - The Final Cut,"['Adventure', 'RPG']",2021-03-30,IndieGala,30,39.99,7.99,80.02,4.65
+44,Assassins Creed Valhalla - Ragnarok Edition,"['Adventure', 'Action', 'RPG']",2020-11-10,GreenManGaming,3,99.99,17.60,82.4,3.72
+45,Ace Combat 7: Skies Unknown - TOP GUN: Maverick Ultimate Edition,"['Arcade', 'Adventure', 'Action', 'Simulation']",2019-01-18,Gamesplanet,27,99.99,16.99,83.01,3.94
+46,Tom Clancy's Ghost Recon Wildlands Gold Year 2 Edition,"['Shooter', 'Massively Multiplayer', 'Action']",2017-03-06,Gamesplanet,27,79.99,14.85,81.44,3.57
+47,Assassins Creed Origins Gold Edition,"['Action', 'RPG']",2017-10-27,Humble Store,11,99.99,14.99,85.01,3.97
+48,Assassins Creed Odyssey Gold Edition,"['Action', 'RPG']",2018-10-05,Humble Store,11,99.99,14.99,85.01,3.98
+49,Assassin's Creed Odyssey - Deluxe Edition,"['Action', 'RPG']",2018-10-05,Humble Store,11,79.99,11.99,85.01,3.98
+50,Disco Elysium - The Final Cut,"['Adventure', 'RPG']",2021-03-30,DLGamer,33,39.99,8.80,77.99,4.65
+51,Far Cry 5 Gold Edition,"['Shooter', 'Adventure', 'Action']",2018-03-27,Gamesplanet,27,89.99,16.75,81.39,3.67
+52,Tom Clancys Ghost Recon Breakpoint Gold Edition,"['Shooter', 'Adventure', 'Action']",2019-10-04,Gamesplanet,27,99.99,17.99,82.01,2.91
+53,Watch Dogs: Legion Gold Edition,"['Shooter', 'Adventure', 'Action']",2020-10-29,Gamesplanet,27,99.99,17.99,82.01,3.1
+54,Inertial Drift,"['Racing', 'Indie']",2020-09-11,Steam,1,19.99,0.99,95.05,2.87
+55,Assassins Creed Odyssey Ultimate Edition,"['Action', 'RPG']",2018-10-05,Humble Store,11,119.99,17.99,85.01,3.98
+56,Ace Combat 7: Skies Unknown - TOP GUN: Maverick Ultimate Edition,"['Arcade', 'Adventure', 'Action', 'Simulation']",2019-01-18,IndieGala,30,99.99,19.99,80.01,3.94
+57,Ace Combat 7: Skies Unknown - TOP GUN: Maverick Ultimate Edition,"['Arcade', 'Adventure', 'Action', 'Simulation']",2019-01-18,GamersGate,2,99.99,20.00,80.0,3.94
+58,DRAGON BALL Z: KAKAROT - Deluxe Edition,"['Action', 'RPG']",2020-01-16,Gamesplanet,27,84.99,16.99,80.01,3.71
+59,Assassins Creed Valhalla - Complete Edition,"['Adventure', 'Action', 'RPG']",2020-11-10,GreenManGaming,3,139.99,24.64,82.4,3.72

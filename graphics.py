@@ -81,10 +81,10 @@ def min_max_disc_vs_shop_bar(df):
 def linear_graph_discounts_vs_punct_linear(df):
 
     """
-    This function creates a line graph that shows the relationship between discount percentage and game ratings (Metacritic score) for each shop.
+    This function creates a line graph that shows the relationship between discount percentage and game ratings mark for each shop.
     
     Parameters:
-        df (DataFrame): A pandas DataFrame that contains video game data, including discount percentages, shop names, and Metacritic scores.
+        df (DataFrame): A pandas DataFrame that contains video game data, including discount percentages, shop names, and score.
     
     Purpose:
         To visualize the correlation between the discount a game receives and its rating. A separate line is plotted for each shop.
@@ -92,16 +92,16 @@ def linear_graph_discounts_vs_punct_linear(df):
 
     import matplotlib.pyplot as plt
 
-    df_plat_punt = df[df["metacritic"] > 0][["shop", "discount_perc", "metacritic"]]
+    df_plat_punt = df[df["score"] > 0][["shop", "discount_perc", "score"]]
 
-    df_plat_punt.sort_values(by="metacritic", ascending=True, inplace=True)
+    df_plat_punt.sort_values(by="score", ascending=True, inplace=True)
 
     df_plat_punt
 
     plt.figure(figsize=(15, 9))
     for tienda in df_plat_punt['shop'].unique():
         df_tienda = df_plat_punt[df_plat_punt['shop'] == tienda]
-        plt.plot(df_tienda['metacritic'], df_tienda['discount_perc'], label=tienda, marker='o')
+        plt.plot(df_tienda['score'], df_tienda['discount_perc'], label=tienda, marker='o')
 
     plt.title('Discount vs punctuation')
     plt.xlabel('Punctuation')
@@ -184,7 +184,7 @@ def linear_graph_discounts_vs_releasedate(df):
     import pandas as pd
     import matplotlib.dates as mdates
 
-    df_plat_punt = df[df["metacritic"] > 0][["shop", "discount_perc", "release_date", "metacritic"]]
+    df_plat_punt = df[df["score"] > 0][["shop", "discount_perc", "release_date", "score"]]
 
     # Convertir la columna "release_date" a datetime
     df_plat_punt['release_date'] = pd.to_datetime(df_plat_punt['release_date'])

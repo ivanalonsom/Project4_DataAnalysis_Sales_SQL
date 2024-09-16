@@ -63,7 +63,7 @@ def ini_rawg_API(game):
     params = {
         'key': api_key,
         'search': game,
-        'search_exact' : True
+        #'search_exact' : True
     }
     
     time.sleep(0.5)
@@ -116,14 +116,14 @@ def fill_lists(dict_deals):
         To break down the data from the CheapShark API into separate lists that store specific information, making it easier to analyze and create dataframes.
     """
 
-    shops_list = []
+    store_name_list = []
     dict_of_stores = get_dict_stores()
     names_list = []
     original_price_list = []
     discount_price_list = []
     perc_disc_list = []
-    metacritic_list = []
-
+    rating_list = []
+    store_id = []
     
     genre_list = []
     released_list = []
@@ -133,24 +133,25 @@ def fill_lists(dict_deals):
 
         names_list.append(x["title"])
 
-        shops_list.append(dict_of_stores[x["storeID"]])        
+        store_name_list.append(dict_of_stores[x["storeID"]])        
 
         original_price_list.append(x["normalPrice"])
 
         discount_price_list.append(x["salePrice"])
         
-        perc_disc_list.append(round( float(x["savings"]), 2) )
-
-        metacritic_list.append(float(x["metacriticScore"]))
-
+        perc_disc_list.append(round(float(x["savings"]), 2) )
+        
+        store_id.append(x["storeID"])
+        
         data_title = ini_rawg_API(x["title"])
-        genre_list.append(get_genre_list(data_title, x["title"]))
+        rating_list.append(get_rate_list(data_title))
+        genre_list.append(get_genre_list(data_title))
         released_list.append(get_release_date_list(data_title) )
 
         #released_list.append(x["releaseDate"])
 
 
-    return  names_list, genre_list, released_list ,shops_list, original_price_list, discount_price_list, perc_disc_list, metacritic_list
+    return  names_list, genre_list, released_list ,store_name_list, store_id, original_price_list, discount_price_list, perc_disc_list, rating_list
     
 
 def create_cheapshark_df(dict_deals):
@@ -169,11 +170,11 @@ def create_cheapshark_df(dict_deals):
     """
     import pandas as pd
 
-    a, b, c, d, e, f, g, h = fill_lists(dict_deals)
+    a, b, c, d, e, f, g, h, i = fill_lists(dict_deals)
 
-    lista_zip = list(zip(a, b, c, d, e, f, g, h))
+    lista_zip = list(zip(a, b, c, d, e, f, g, h, i))
 
-    df = pd.DataFrame(lista_zip, columns=['title', 'genre', 'release_date', 'shop', 'og_price', 'dc_price', 'discount_perc', 'metacritic'])
+    df = pd.DataFrame(lista_zip, columns=['title', 'genre', 'release_date', 'store_name', 'store_id', 'og_price', 'dc_price', 'discount_perc', 'scores'])
 
     return df
 
@@ -198,7 +199,7 @@ def save_df(df):
     df.to_csv(f"data/registro_{actual_date}_{actual_hour}horas")
 
 
-def get_genre_list(data, game_title):
+def get_genre_list(data):
 
     """
     This function extracts the genres of a specific video game from the RAWG API data.
@@ -216,10 +217,8 @@ def get_genre_list(data, game_title):
 
     genres_list = []
 
-    for x in data["results"]:
-        for y in x["genres"]:
-            if x["name"] == game_title:
-                genres_list.append(y["name"]) 
+    for x in data["results"][0]["genres"]:
+        genres_list.append(x["name"]) 
 
     return genres_list
 
@@ -244,6 +243,16 @@ def get_release_date_list(data):
             if "released" in result:
                 return result["released"]
     return None
+
+
+def get_rate_list(data):
+
+    if "results" in data and len(data["results"]) > 0:
+            result = data["results"][0]
+            if "released" in result:
+                return result["rating"]
+    return None
+    
 
 
 def unroll_list_from_dfcolumn(df, column):
