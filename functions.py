@@ -124,6 +124,7 @@ def fill_lists(dict_deals):
     perc_disc_list = []
     rating_list = []
     store_id = []
+    game_id = []
     
     genre_list = []
     released_list = []
@@ -142,16 +143,16 @@ def fill_lists(dict_deals):
         perc_disc_list.append(round(float(x["savings"]), 2) )
         
         store_id.append(x["storeID"])
+
+        game_id.append(x["gameID"])
         
         data_title = ini_rawg_API(x["title"])
         rating_list.append(get_rate_list(data_title))
         genre_list.append(get_genre_list(data_title))
         released_list.append(get_release_date_list(data_title) )
 
-        #released_list.append(x["releaseDate"])
 
-
-    return  names_list, genre_list, released_list ,store_name_list, store_id, original_price_list, discount_price_list, perc_disc_list, rating_list
+    return  game_id, names_list, genre_list, released_list ,store_name_list, store_id, original_price_list, discount_price_list, perc_disc_list, rating_list
     
 
 def create_cheapshark_df(dict_deals):
@@ -170,33 +171,13 @@ def create_cheapshark_df(dict_deals):
     """
     import pandas as pd
 
-    a, b, c, d, e, f, g, h, i = fill_lists(dict_deals)
+    a, b, c, d, e, f, g, h, i, j = fill_lists(dict_deals)
 
-    lista_zip = list(zip(a, b, c, d, e, f, g, h, i))
+    lista_zip = list(zip(a, b, c, d, e, f, g, h, i, j))
 
-    df = pd.DataFrame(lista_zip, columns=['title', 'genre', 'release_date', 'store_name', 'store_id', 'og_price', 'dc_price', 'discount_perc', 'scores'])
+    df = pd.DataFrame(lista_zip, columns=['gameID', 'title', 'genre', 'release_date', 'store_name', 'store_id', 'og_price', 'dc_price', 'discount_perc', 'scores'])
 
     return df
-
-
-def save_df(df):
-
-    """
-    This function saves the DataFrame of video game deals as a CSV file with the current date and time in its name.
-    
-    Parameters:
-        df (DataFrame): The DataFrame containing the video game deal data.
-    
-    Purpose:
-        To save the table of game data to a CSV file, making it easy to access and share later.
-    """
-    
-    from datetime import datetime
-
-    actual_date = datetime.now().strftime("%d-%m-%Y")
-    actual_hour = datetime.now().strftime("%H")
-
-    df.to_csv(f"data/registro_{actual_date}_{actual_hour}horas")
 
 
 def get_genre_list(data):
@@ -249,10 +230,9 @@ def get_rate_list(data):
 
     if "results" in data and len(data["results"]) > 0:
             result = data["results"][0]
-            if "released" in result:
+            if "rating" in result:
                 return result["rating"]
     return None
-    
 
 
 def unroll_list_from_dfcolumn(df, column):
@@ -312,6 +292,25 @@ def main(url):
     
     dict_deals = ini_cheapshark_API(url)
     df_discounts = create_cheapshark_df(dict_deals)
-    save_df(df_discounts)
 
     return df_discounts
+
+
+def save_df(df, name):
+
+    """
+    This function saves the DataFrame of video game deals as a CSV file with the current date and time in its name.
+    
+    Parameters:
+        df (DataFrame): The DataFrame containing the video game deal data.
+    
+    Purpose:
+        To save the table of game data to a CSV file, making it easy to access and share later.
+    """
+    
+    from datetime import datetime
+
+    actual_date = datetime.now().strftime("%d-%m-%Y")
+    # actual_hour = datetime.now().strftime("%H")
+
+    df.to_csv(f"data/registro_{name}_{actual_date}.csv")
