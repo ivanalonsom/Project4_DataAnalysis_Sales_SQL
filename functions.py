@@ -341,3 +341,5 @@ def import_to_sql(df, name):
     # Enviar DataFrame a MySQL
 
     df.to_sql(name, con=engine, if_exists='append', index=False)
+
+    

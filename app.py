@@ -11,24 +11,12 @@ st.write("""
 This presentation demonstrates data analysis using Streamlit. Use the selector below to choose different datasets and visualize their respective analyses.
 """)
 
-# Carga de DataFrames
-df1 = pd.read_csv('data/registro_games_18-09-2024.csv')
-
-df2 = pd.DataFrame({
-    'X': [5, 6, 7, 8],
-    'Y': [50, 60, 70, 80]
-})
-
-df3 = pd.DataFrame({
-    'M': [9, 10, 11, 12],
-    'N': [90, 100, 110, 120]
-})
-
 # Diccionario de DataFrames
 dataframes = {
-    "Dataset 1": df1,
-    "Dataset 2": df2,
-    "Dataset 3": df3
+    "Games Dataset": pd.read_csv('data/games_register.csv'),
+    "Shops Dataset": pd.read_csv('data/games_genres_register.csv'),
+    "Game units Dataset": pd.read_csv('data/units_register.csv'),
+    "Genres Dataset": pd.read_csv('data/genres_register.csv'),
 }
 
 # Selector de DataFrame
