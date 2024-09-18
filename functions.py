@@ -331,10 +331,16 @@ def import_to_sql(df, name):
     import pandas as pd
     from sqlalchemy import create_engine, text
     import pymysql
+    import os
+    from dotenv import load_dotenv
+
+    bbdd_name = os.getenv("bbdd_name")
+    passBD = os.getenv("passBD")
 
     # Tus parámetros de conexión
-    bd = "project4"
-    password = "root"  # Asegúrate de reemplazar esto con tu contraseña real
+    bd = bbdd_name
+    password = passBD 
+
     connection_string = 'mysql+pymysql://root:' + password + '@localhost/' + bd
     engine = create_engine(connection_string)
 
