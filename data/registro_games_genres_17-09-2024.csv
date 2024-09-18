@@ -1,61 +1,149 @@
-,gameID,genre
-0,291141,"['Indie', 'Platformer', 'Adventure', 'Action']"
-1,267363,"['Indie', 'Adventure', 'Action']"
-2,285470,[]
-3,191972,['Racing']
-4,210040,"['Action', 'Fighting']"
-5,198716,"['Adventure', 'Action']"
-6,219675,"['Strategy', 'Simulation', 'Sports']"
-7,210040,"['Action', 'Fighting']"
-8,210040,"['Action', 'Fighting']"
-9,210040,"['Action', 'Fighting']"
-10,198716,"['Adventure', 'Action']"
-11,198716,"['Adventure', 'Action']"
-12,157072,"['Arcade', 'Action', 'Fighting']"
-13,198716,"['Adventure', 'Action']"
-14,170046,"['Action', 'RPG']"
-15,202932,"['Action', 'RPG']"
-16,227495,"['Adventure', 'Action', 'RPG']"
-17,171780,"['Adventure', 'RPG']"
-18,157072,"['Arcade', 'Action', 'Fighting']"
-19,157072,"['Arcade', 'Action', 'Fighting']"
-20,157072,"['Arcade', 'Action', 'Fighting']"
-21,188229,"['Action', 'RPG']"
-22,237593,"['Action', 'Fighting', 'Sports']"
-23,237437,"['Adventure', 'Action', 'RPG']"
-24,218851,"['Casual', 'Action', 'RPG', 'Sports']"
-25,202932,"['Action', 'RPG']"
-26,188216,"['Action', 'RPG']"
-27,170045,"['Action', 'RPG']"
-28,191458,"['Action', 'Fighting']"
-29,174472,['Fighting']
-30,227495,"['Adventure', 'Action', 'RPG']"
-31,237593,"['Action', 'Fighting', 'Sports']"
-32,202932,"['Action', 'RPG']"
-33,171780,"['Adventure', 'RPG']"
-34,202932,"['Action', 'RPG']"
-35,171780,"['Adventure', 'RPG']"
-36,153679,"['Action', 'RPG']"
-37,171780,"['Adventure', 'RPG']"
-38,188217,"['Action', 'RPG']"
-39,237437,"['Adventure', 'Action', 'RPG']"
-40,272975,"['Casual', 'Action', 'RPG', 'Sports']"
-41,174472,['Fighting']
-42,191458,"['Action', 'Fighting']"
-43,198630,"['Arcade', 'Shooter', 'Adventure', 'Action']"
-44,174472,['Fighting']
-45,191458,"['Action', 'Fighting']"
-46,174472,['Fighting']
-47,191458,"['Action', 'Fighting']"
-48,272975,"['Casual', 'Action', 'RPG', 'Sports']"
-49,246994,"['Arcade', 'Adventure', 'Action', 'Simulation']"
-50,233316,"['Adventure', 'Action', 'RPG']"
-51,237594,"['Platformer', 'Adventure', 'Action']"
-52,198638,"['Arcade', 'Shooter', 'Adventure', 'Action']"
-53,227569,"['Adventure', 'Action', 'RPG']"
-54,227495,"['Adventure', 'Action', 'RPG']"
-55,246994,"['Arcade', 'Adventure', 'Action', 'Simulation']"
-56,237594,"['Platformer', 'Adventure', 'Action']"
-57,153679,"['Action', 'RPG']"
-58,227942,"['Adventure', 'RPG']"
-59,241096,"['Adventure', 'Action', 'RPG']"
+,id,gameID,genre
+0,1,291141,Indie
+0,2,291141,Platformer
+0,3,291141,Adventure
+0,4,291141,Action
+1,5,267363,Indie
+1,6,267363,Adventure
+1,7,267363,Action
+2,8,285470,
+3,9,191972,Racing
+4,10,210040,Action
+4,11,210040,Fighting
+5,12,198716,Adventure
+5,13,198716,Action
+6,14,219675,Strategy
+6,15,219675,Simulation
+6,16,219675,Sports
+7,17,210040,Action
+7,18,210040,Fighting
+8,19,210040,Action
+8,20,210040,Fighting
+9,21,210040,Action
+9,22,210040,Fighting
+10,23,198716,Adventure
+10,24,198716,Action
+11,25,198716,Adventure
+11,26,198716,Action
+12,27,157072,Arcade
+12,28,157072,Action
+12,29,157072,Fighting
+13,30,198716,Adventure
+13,31,198716,Action
+14,32,170046,Action
+14,33,170046,RPG
+15,34,202932,Action
+15,35,202932,RPG
+16,36,227495,Adventure
+16,37,227495,Action
+16,38,227495,RPG
+17,39,171780,Adventure
+17,40,171780,RPG
+18,41,157072,Arcade
+18,42,157072,Action
+18,43,157072,Fighting
+19,44,157072,Arcade
+19,45,157072,Action
+19,46,157072,Fighting
+20,47,157072,Arcade
+20,48,157072,Action
+20,49,157072,Fighting
+21,50,188229,Action
+21,51,188229,RPG
+22,52,237593,Action
+22,53,237593,Fighting
+22,54,237593,Sports
+23,55,237437,Adventure
+23,56,237437,Action
+23,57,237437,RPG
+24,58,218851,Casual
+24,59,218851,Action
+24,60,218851,RPG
+24,61,218851,Sports
+25,62,202932,Action
+25,63,202932,RPG
+26,64,188216,Action
+26,65,188216,RPG
+27,66,170045,Action
+27,67,170045,RPG
+28,68,191458,Action
+28,69,191458,Fighting
+29,70,174472,Fighting
+30,71,227495,Adventure
+30,72,227495,Action
+30,73,227495,RPG
+31,74,237593,Action
+31,75,237593,Fighting
+31,76,237593,Sports
+32,77,202932,Action
+32,78,202932,RPG
+33,79,171780,Adventure
+33,80,171780,RPG
+34,81,202932,Action
+34,82,202932,RPG
+35,83,171780,Adventure
+35,84,171780,RPG
+36,85,153679,Action
+36,86,153679,RPG
+37,87,171780,Adventure
+37,88,171780,RPG
+38,89,188217,Action
+38,90,188217,RPG
+39,91,237437,Adventure
+39,92,237437,Action
+39,93,237437,RPG
+40,94,272975,Casual
+40,95,272975,Action
+40,96,272975,RPG
+40,97,272975,Sports
+41,98,174472,Fighting
+42,99,191458,Action
+42,100,191458,Fighting
+43,101,198630,Arcade
+43,102,198630,Shooter
+43,103,198630,Adventure
+43,104,198630,Action
+44,105,174472,Fighting
+45,106,191458,Action
+45,107,191458,Fighting
+46,108,174472,Fighting
+47,109,191458,Action
+47,110,191458,Fighting
+48,111,272975,Casual
+48,112,272975,Action
+48,113,272975,RPG
+48,114,272975,Sports
+49,115,246994,Arcade
+49,116,246994,Adventure
+49,117,246994,Action
+49,118,246994,Simulation
+50,119,233316,Adventure
+50,120,233316,Action
+50,121,233316,RPG
+51,122,237594,Platformer
+51,123,237594,Adventure
+51,124,237594,Action
+52,125,198638,Arcade
+52,126,198638,Shooter
+52,127,198638,Adventure
+52,128,198638,Action
+53,129,227569,Adventure
+53,130,227569,Action
+53,131,227569,RPG
+54,132,227495,Adventure
+54,133,227495,Action
+54,134,227495,RPG
+55,135,246994,Arcade
+55,136,246994,Adventure
+55,137,246994,Action
+55,138,246994,Simulation
+56,139,237594,Platformer
+56,140,237594,Adventure
+56,141,237594,Action
+57,142,153679,Action
+57,143,153679,RPG
+58,144,227942,Adventure
+58,145,227942,RPG
+59,146,241096,Adventure
+59,147,241096,Action
+59,148,241096,RPG

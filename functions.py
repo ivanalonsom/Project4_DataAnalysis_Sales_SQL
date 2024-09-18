@@ -175,7 +175,7 @@ def create_cheapshark_df(dict_deals):
 
     lista_zip = list(zip(a, b, c, d, e, f, g, h, i, j))
 
-    df = pd.DataFrame(lista_zip, columns=['gameID', 'title', 'genre', 'release_date', 'store_name', 'store_id', 'og_price', 'dc_price', 'discount_perc', 'scores'])
+    df = pd.DataFrame(lista_zip, columns=['gameID', 'title', 'genre_name', 'release_date', 'store_name', 'store_id', 'original_price', 'discount_price', 'discount_perc', 'scores'])
 
     return df
 
