@@ -313,4 +313,31 @@ def save_df(df, name):
     actual_date = datetime.now().strftime("%d-%m-%Y")
     # actual_hour = datetime.now().strftime("%H")
 
-    df.to_csv(f"data/registro_{name}_{actual_date}.csv")
+    df.to_csv(f"data/Otros/registro_{name}_{actual_date}.csv")
+
+
+
+def import_to_sql(df, name):
+
+    """
+    This function imports the DataFrame of video game deals to a SQL database.
+    
+    Parameters:
+        df (DataFrame): The DataFrame containing the video game deal data.
+        name (str): The name of the database to be created or used.
+
+    """
+
+    import pandas as pd
+    from sqlalchemy import create_engine, text
+    import pymysql
+
+    # Tus parámetros de conexión
+    bd = "project4"
+    password = "root"  # Asegúrate de reemplazar esto con tu contraseña real
+    connection_string = 'mysql+pymysql://root:' + password + '@localhost/' + bd
+    engine = create_engine(connection_string)
+
+    # Enviar DataFrame a MySQL
+
+    df.to_sql(name, con=engine, if_exists='append', index=False)

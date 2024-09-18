@@ -14,8 +14,8 @@ CREATE TABLE IF NOT EXISTS units(
 	num_unit int NOT NULL PRIMARY KEY AUTO_INCREMENT, 
 	gameID int,
 	store_id int NOT NULL,
-	original_price NUMERIC(4,2),
-	discount_price NUMERIC(4,2),
+	original_price NUMERIC(5,2),
+	discount_price NUMERIC(5,2),
 	CONSTRAINT fk_units_games FOREIGN KEY (gameID) REFERENCES games(gameID) ON DELETE SET NULL ON UPDATE CASCADE,
 	CONSTRAINT fk_units_shops FOREIGN KEY (store_id) REFERENCES shops(store_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
