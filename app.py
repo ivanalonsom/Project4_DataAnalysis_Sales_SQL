@@ -57,7 +57,8 @@ def datasets():
 def database():
 
     sql_files = {
-        "Tables": 'tables.sql',
+        "Entity - Relation" : 'ER.png',
+        "Tables": 'data/tables.sql',
         "Queries": 'queries.sql'
     }
 
@@ -67,10 +68,15 @@ def database():
         list(sql_files.keys())
     )
 
-    if option == 'Tables':
+    if option == 'Entity - Relation':
+        st.write("## Entity - Relation Diagram")
+        st.image("data/ER.png")
+        st.write("## Entity - Relational Model Diagram")
+        st.image("data/relational.png")
+    elif option == 'Tables':
         st.title("Table creation")
 
-        with open('tables.sql', 'r', encoding='utf-8') as file:
+        with open('data/tables.sql', 'r', encoding='utf-8') as file:
             sql_tables = file.read()
 
         st.code(sql_tables, language='sql')
@@ -107,7 +113,7 @@ st.sidebar.title("Navegation")
 page = st.sidebar.selectbox("Select a page", ["Introduction", "Datasets showcase", "Database creation and queries", "Graphics from advanced queries"]) 
 st.sidebar.markdown("<br>" * 20, unsafe_allow_html=True)
 st.sidebar.markdown("""  
-                ## This project have been developed by:
+                ## This project has been developed by:
                 Iván Alonso - https://github.com/ivanalonsom  
                 Mario Jimenez - https://github.com/mjimcode
                 """)
