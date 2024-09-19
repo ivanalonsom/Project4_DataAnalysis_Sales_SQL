@@ -1,14 +1,14 @@
-,genre_name,description
-0,Indie,null
-1,Platformer,null
-2,Adventure,null
-3,Action,null
-5,Racing,null
-6,Fighting,null
-7,Strategy,null
-8,Simulation,null
-9,Sports,null
-10,Arcade,null
-11,RPG,null
-12,Casual,null
-13,Shooter,null
+genre_name,description
+Indie,Videojuegos creados por pequeños estudios independientes
+Platformer,Juegos donde se salta y navega entre plataformas
+Adventure,Juegos centrados en la exploración y resolución de puzzles
+Action,Enfocados en la velocidad y combates intensos
+Racing,Carreras de vehículos en diversos entornos y estilos
+Fighting,Combates cuerpo a cuerpo entre personajes
+Strategy,Planificación y control táctico para alcanzar objetivos
+Simulation,Recrean actividades de la vida real o sistemas complejos
+Sports,Basados en deportes tradicionales como fútbol o baloncesto
+Arcade,Juegos rápidos y simples con foco en la habilidad
+RPG,Desarrollo de personajes y narrativa en mundos interactivos
+Casual,"Juegos fáciles de aprender, diseñados para el entretenimiento rápido"
+Shooter,Enfocados en el combate armado desde diversas perspectivas

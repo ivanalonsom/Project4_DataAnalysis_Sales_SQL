@@ -1,0 +1,9 @@
+-- 1. SHOW THE NAME AND SCORE OF THE TOP 3 RATED GAMES WHOSE GENRE IS 'ACTION'
+
+SELECT DISTINCT title, scores
+FROM games g
+INNER JOIN games_genres gr
+ON g.gameID = gr.gameID
+WHERE genre_name LIKE 'Action'
+ORDER BY scores DESC
+LIMIT 3

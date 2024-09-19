@@ -313,7 +313,7 @@ def save_df(df, name):
     actual_date = datetime.now().strftime("%d-%m-%Y")
     # actual_hour = datetime.now().strftime("%H")
 
-    df.to_csv(f"data/Otros/registro_{name}_{actual_date}.csv")
+    df.to_csv(f"data/Otros/registro_{name}_{actual_date}.csv", index=False)
 
 
 
