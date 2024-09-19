@@ -4,12 +4,37 @@ import matplotlib.pyplot as plt
 
 
 def intro():
-    st.title("Project 4 - Data Analysis Oriented to Sales Strategies from a SQL perspective")
+    
+    st.markdown("<style>h1 {text-align: justify;}</style>", unsafe_allow_html=True)
+    st.title("Project 4 - Data Analysis Oriented to Sales from a SQL perspective.")
 
-    st.write("""
-    # Introduction
-    This presentation demonstrates data analysis using Streamlit. Use the selector below to choose different datasets and visualize their respective analyses.
-    """)
+    st.markdown("""<p style='font-size: 18px'>
+                 🎮 Welcome to our enhanced <b>data analysis project</b>, which focuses on <b>sales strategies</b> within the dynamic and rapidly growing video game market. 
+                Building upon our previous work of collecting and analyzing video game deal data, this project takes it a step further by integrating various 
+                datasets into a structured <b>SQL database</b>, allowing for more sophisticated queries and visualizations.</p>
+        """, unsafe_allow_html=True)
+    
+    
+    st.markdown("<h3 style='color:gray; font-size: 18px'>Below is an example of the original dataframe, prior to the treatment performed.</h3>", unsafe_allow_html=True)
+    
+
+    # if st.button("Show"):
+    #     df_no_treatment = pd.read_csv('data/df_no_treatment.csv')
+    #     st.write(df_no_treatment)
+        
+
+    if 'show_df' not in st.session_state:
+        st.session_state.show_df = False    
+
+    # Botón para mostrar/ocultar el dataframe
+    if st.button("Show/Hide"):
+        st.session_state.show_df = not st.session_state.show_df
+
+    # Mostrar el dataframe si el estado es True
+    if st.session_state.show_df:
+        df_no_treatment = pd.read_csv('data/df_no_treatment.csv')
+        st.write(df_no_treatment)
+
 
 
 def datasets():
