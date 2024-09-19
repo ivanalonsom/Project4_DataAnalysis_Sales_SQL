@@ -4,14 +4,17 @@ import matplotlib.pyplot as plt
 
 
 def intro():
-    
+    st.image("https://public-images.interaction-design.org/literature/articles/heros/article_131376_hero_654d8b963adfb4.39819600.png?tr=w-1200,c-at_max", use_column_width=True)
+    st.markdown("<p style='text-align: right; font-size: 10px; padding: 0'>Image source: <em><a href=https://www.interaction-design.org/literature/article/data-analysis-techniques'>https://www.interaction-design.org/literature/article/data-analysis-techniques</em></a></p>", unsafe_allow_html=True)
+
+
     st.markdown("<style>h1 {text-align: justify;}</style>", unsafe_allow_html=True)
     st.title("Project 4 - Data Analysis Oriented to Sales from a SQL perspective.")
 
     st.markdown("""<p style='font-size: 18px'>
-                 🎮 Welcome to our enhanced <b>data analysis project</b>, which focuses on <b>sales strategies</b> within the dynamic and rapidly growing video game market. 
+                 🎮 Welcome to our enhanced <strong>data analysis project</strong>, which focuses on <strong>sales strategies</strong> within the dynamic and rapidly growing video game market. 
                 Building upon our previous work of collecting and analyzing video game deal data, this project takes it a step further by integrating various 
-                datasets into a structured <b>SQL database</b>, allowing for more sophisticated queries and visualizations.</p>
+                datasets into a structured <strong>SQL database</strong>, allowing for more sophisticated queries and visualizations.</p>
         """, unsafe_allow_html=True)
     
     
