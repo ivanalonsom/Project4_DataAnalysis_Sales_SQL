@@ -91,7 +91,7 @@ def database():
 
         query_opt = st.radio(
             "## Select a query to display",
-            list(selected_query.keys())
+            list(selected_query.keys()), horizontal = True
         )
 
         selected_value = selected_query[query_opt][0]
@@ -104,6 +104,65 @@ def database():
         result_sel = selected_query[query_opt][1]
 
         st.write(pd.read_csv(result_sel))
+
+
+def adv_queries_graphics():
+    import pandas as pd
+    import plotly.express as px
+    
+    selected_query = {
+            'Query_A' : ["data/Queries/advanced1.sql","data/Queries/adv_res1.csv"],
+            'Query_B' : ["data/Queries/advanced2.sql","data/Queries/adv_res2.csv"],
+            'Query_C' : ["data/Queries/advanced3.sql","data/Queries/adv_res3.csv"],
+            'Query_D' : ["data/Queries/advanced4.sql","data/Queries/adv_res4.csv"]
+    }
+
+    query_opt = st.radio(
+        "## Select a query to display",
+        list(selected_query.keys() ), horizontal = True
+    )
+
+    selected_value = selected_query[query_opt][0]
+
+    with open(selected_value, 'r', encoding='utf-8') as file:
+        sql_tables = file.read()
+
+    st.code(sql_tables, language='sql')
+
+    result_sel = selected_query[query_opt][1]
+
+    st.write(pd.read_csv(result_sel))
+
+    df_res = pd.read_csv(result_sel)
+    
+    st.title("Gráfico interactivo")
+    if df_res is not None:
+        st.write("Elija una columna para el eje X")
+        ejeX = st.selectbox("Eje X", df_res.columns)
+        st.write("Elija una columna para el eje Y")
+        ejeY = st.selectbox("Eje Y", df_res.columns)
+
+        col1, col2, col3 = st.columns(3)
+        graph_container = st.container()
+
+
+        with col1:
+            if st.button("Create bar chart"):
+                with graph_container:
+                    fig = px.bar(df_res, x=ejeX, y=ejeY, title=f"{ejeY} per {ejeX}")
+                    st.plotly_chart(fig)
+
+        with col2:
+            if st.button("Create dot chart"):
+                with graph_container:
+                    fig = px.line(df_res, x=ejeX, y=ejeY, title=f"{ejeY} per {ejeX}")
+                    st.plotly_chart(fig)
+        
+        with col3:
+            if st.button("Create pie chart"):
+                with graph_container:
+                    fig = px.pie(df_res, values= ejeX, names=ejeY, title=f"{ejeY} per {ejeX}")
+                    st.plotly_chart(fig)
 
 
     
@@ -124,6 +183,8 @@ elif page == "Datasets showcase":
     datasets()
 elif page == 'Database creation and queries':
     database()
+elif page == 'Graphics from advanced queries':
+    adv_queries_graphics()
 
 
 
