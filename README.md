@@ -42,39 +42,42 @@ jupyter notebook
 ## 📁 Project Structure
 sql-database/
 │
-├── __pycache__/                    # Directory for Python cache files
-├── data/                           # Directory for raw data files and SQL scripts
-│   ├── Otros/                          # Directory for additional files
-│   ├── Queries/                        # Directory for SQL query files
-│   ├── ER.png                          # Entity-Relationship diagram image
-│   ├── ERD.mwb                         # MySQL Workbench file for the ERD
-│   ├── games_genres_register.csv       # CSV file with game genres register
-│   ├── games_register.csv              # CSV file with games register
-│   ├── genres_register.csv             # CSV file with genres register
-│   ├── relational.png                  # Image showing the relational model
-│   ├── shops_register.csv              # CSV file with shops register
-│   ├── tables.sql                      # SQL script for creating database tables
-│   └── units_register.csv              # CSV file with units register
-├── .gitattributes                  # Git configuration file for attributes
-├── .gitignore                      # Git configuration file to specify untracked files
-├── README.md                       # Project README file
-├── app.py                          # Main script for running the application
-├── functions.py                    # Script containing helper functions
-├── main.ipynb                      # Jupyter Notebook with main analysis or project steps
-└── requirements.txt                # File listing the required Python libraries
+├── __pycache__/                    # Directory for Python cache files  
+├── data/                           # Directory for raw data files and SQL scripts  
+│   ├── Otros/                          # Directory for additional files  
+│   ├── Queries/                        # Directory for SQL query files  
+│   ├── ER.png                          # Entity-Relationship diagram image  
+│   ├── ERD.mwb                         # MySQL Workbench file for the ERD  
+│   ├── games_genres_register.csv       # CSV file with game genres register  
+│   ├── games_register.csv              # CSV file with games register  
+│   ├── genres_register.csv             # CSV file with genres register  
+│   ├── relational.png                  # Image showing the relational model  
+│   ├── shops_register.csv              # CSV file with shops register  
+│   ├── tables.sql                      # SQL script for creating database tables  
+│   └── units_register.csv              # CSV file with units register  
+├── .gitattributes                  # Git configuration file for attributes  
+├── .gitignore                      # Git configuration file to specify untracked files  
+├── README.md                       # Project README file  
+├── app.py                          # Main script for running the application  
+├── functions.py                    # Script containing helper functions  
+├── main.ipynb                      # Jupyter Notebook with main analysis or project steps  
+└── requirements.txt                # File listing the required Python libraries  
 
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! To contribute:
 Fork the repository.
-Create a new branch:
-`git checkout -b feature-branch`
-Make your changes and commit them:
-`git commit -m 'Add new feature'`
-Push to the branch:
-`git push origin feature-branch`
+Create a new branch:  
+`git checkout -b feature-branch`  
+Make your changes and commit them:  
+`git commit -m 'Add new feature'`  
+Push to the branch:  
+`git push origin feature-branch`  
 Open a pull request.
 
-🛠️ CREATORS
-https://github.com/ivanalonsom
-https://github.com/mjimcode
+## 🛠️ CREATORS
+- https://github.com/ivanalonsom  
+- https://github.com/mjimcode
+
+## 📝 Link to the Streamlit 
+[https://docs.google.com/presentation/d/1MOzTYnfQh2p2-W3pegoZOy8caBoqv0sD/edit?usp=drive_link&ouid=112738522280937522947&rtpof=true&sd=true](https://project4-sql-data-oriented-to-sales.streamlit.app/)
