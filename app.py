@@ -185,7 +185,7 @@ def adv_queries_graphics():
                 with graph_container:
                     fig = px.line(df_res, x=ejeX, y=ejeY, title=f"{ejeY} per {ejeX}")
                     st.plotly_chart(fig)
-        
+
         with col3:
             if st.button("Create pie chart"):
                 with graph_container:
