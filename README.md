@@ -40,8 +40,8 @@ You can also explore the Jupyter notebooks for detailed analysis and visualizati
 jupyter notebook
 
 ## 📁 Project Structure
-sql-database/
-│
+sql-database/  
+│  
 ├── __pycache__/                    # Directory for Python cache files  
 ├── data/                           # Directory for raw data files and SQL scripts  
 │   ├── Otros/                          # Directory for additional files  
