@@ -11,7 +11,7 @@ def intro():
     st.markdown("<style>h1 {text-align: justify;}</style>", unsafe_allow_html=True)
     st.title("Project 4 - Data Analysis Oriented to Sales from a SQL perspective.")
 
-    st.markdown("""<p style='font-size: 18px'>
+    st.markdown("""<p style='font-size: 18px; text-align: justify'>
                  🎮 Welcome to our enhanced <strong>data analysis project</strong>, which focuses on <strong>sales strategies</strong> within the dynamic and rapidly growing video game market. 
                 Building upon our previous work of collecting and analyzing video game deal data, this project takes it a step further by integrating various 
                 datasets into a structured <strong>SQL database</strong>, allowing for more sophisticated queries and visualizations.</p>
