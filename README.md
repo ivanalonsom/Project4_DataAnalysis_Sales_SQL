@@ -1,5 +1,5 @@
-# 📊 Data Analysis of Sales Strategies Oriented to  SQL
-
+# 📊 Data Analysis of Sales Strategies Oriented to SQL  
+## [📝 Link to the Streamlit](https://project4-sql-data-oriented-to-sales.streamlit.app/)
 ## 🎮 Project: Data Analysis of Sales Strategies Oriented to SQL
 Welcome to Video Game Deals Analyzer, a project designed to analyze and visualize video game deal data, providing valuable insights into discounts and trends over time.
 ## 📋 Table of Contents
@@ -78,6 +78,3 @@ Open a pull request.
 ## 🛠️ CREATORS
 - https://github.com/ivanalonsom  
 - https://github.com/mjimcode
-
-## 📝 Link to the Streamlit 
-[https://docs.google.com/presentation/d/1MOzTYnfQh2p2-W3pegoZOy8caBoqv0sD/edit?usp=drive_link&ouid=112738522280937522947&rtpof=true&sd=true](https://project4-sql-data-oriented-to-sales.streamlit.app/)
